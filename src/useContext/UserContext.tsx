@@ -1,30 +1,38 @@
-import {createContext, useState } from "react";
+import { createContext, useState } from "react";
 
+interface User {
+    name: string;
+    isLoggedIn: boolean;
+}
 
-const UserContext = createContext(
-    {
-        user: null,
-        login: () => {},
-        logout: () => {},
-    }
-);
+interface UserContextType {
+    user: User | null;
+    login: () => void;
+    logout: () => void;
+}
 
-export const UserProvider = ({children}: any) => {
-    const [user, setUser] = useState<any>(null);
+const UserContext = createContext<UserContextType>({
+    user: null,
+    login: () => {},
+    logout: () => {},
+});
+
+export const UserProvider = ({ children }: { children: React.ReactNode }) => {
+    const [user, setUser] = useState<User | null>(null);
 
     const login = () => {
-        setUser({name: 'Jhon', isLoggedIn: true });
-    }
+        setUser({ name: 'John', isLoggedIn: true });
+    };
 
     const logout = () => {
         setUser(null);
-    }
+    };
 
-    return(
-        <UserContext.Provider value={{user, login, logout}}>
+    return (
+        <UserContext.Provider value={{ user, login, logout }}>
             {children}
         </UserContext.Provider>
-    )
-}
+    );
+};
 
-export {UserContext}
+export { UserContext };
