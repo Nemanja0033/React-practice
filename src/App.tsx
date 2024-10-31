@@ -1,16 +1,15 @@
-import React, { useContext } from 'react'
-import {UserContext, UserProvider} from './useContext/UserContext'
+import { useContext } from "react"
+import { UserContext, UserProvider } from "./useContext/UserContext"
 
 const UserInfo = () => {
-  const {user, login, logout} = useContext(UserContext);
-  return (
+  const {user, login, logout}:any = useContext(UserContext)
+
+  return(
     <div>
-        <p>{user ? `Hello, ${user.name}` : "Niste prijavljeni"}</p>
-        <button onClick={user ? logout : login}>
-            {user ? "Logout" : "Login"}
-        </button>
+      <p>{user ? `Hello ${user.name}` : 'You are not logged in!'}</p>
+      <button onClick={user ? logout : login}>{user ? 'Logout' : 'Login'}</button>
     </div>
-);  
+  )
 }
 
 const App = () => {
