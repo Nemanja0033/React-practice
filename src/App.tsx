@@ -1,8 +1,8 @@
-import Counter from './useState/Counter'
+import TaskList from "./useReducer/ToDoReducer"
 
 const App = () => {
   return (
-    <div><Counter /></div>
+    <div><TaskList /></div>
   )
 }
 

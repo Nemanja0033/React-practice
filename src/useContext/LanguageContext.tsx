@@ -2,7 +2,7 @@ import { createContext,  useState } from "react";
 
 const LanguageContext = createContext();
 
-export const LanguageProvider = ({ children }) => {
+export const LanguageProvider = ({ children }: {children: React.ReactNode}) => {
     const [language, setLanguage] = useState('Serbian');
 
     const toggleLanguageChange = () => {
