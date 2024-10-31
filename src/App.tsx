@@ -1,17 +1,9 @@
-import { useContext } from "react";
-import { UserContext } from "./useContext/UserContext";
+import Counter from './useState/Counter'
 
-const UserInfo = () => {
-    const { user, login, logout } = useContext(UserContext);
+const App = () => {
+  return (
+    <div><Counter /></div>
+  )
+}
 
-    return (
-        <div>
-            <p>{user ? `Hello ${user.name}` : 'You are not logged in!'}</p>
-            <button onClick={user ? logout : login}>
-                {user ? 'Logout' : 'Login'}
-            </button>
-        </div>
-    );
-};
-
-export default UserInfo;
+export default App
