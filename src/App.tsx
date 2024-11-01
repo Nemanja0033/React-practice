@@ -2,6 +2,7 @@ import {  useContext } from "react"
 import { CounterContext, CounterProvider } from "./useContext/CounterContext"
 import Counter from "./useReducer/CounterReducer";
 import FocusInput from "./useRef/FocusInput";
+import UniqeId from "./useId/UniqeId";
 
 const CartCounter = () => {
   const { counter } =  useContext(CounterContext);
@@ -27,7 +28,9 @@ const Products = () => {
 const App = () => {
   return (
     <div>
-      <FocusInput />
+      <UniqeId />
+      <UniqeId />
+      <UniqeId />
     </div>
   )
 }

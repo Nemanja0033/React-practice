@@ -1,0 +1,43 @@
+Osnove React-a: Kratko ponovi osnove kako bi bili čvrsto postavljeni.
+
+Komponente, props, state
+JSX sintaksa
+Funkcionalne i klasne komponente (iako se danas fokus stavlja na funkcionalne)
+React Hooks: Detaljno istraži osnovne hook-ove.
+
+useState
+useEffect
+useContext (već smo počeli sa ovim)
+useRef (za upravljanje referencama na DOM elemente)
+Napredni Hook-ovi i Optimizacija:
+
+useReducer (za složeniji state management)
+useMemo i useCallback (za optimizaciju performansi)
+Globalno upravljanje stanjem sa Context API-jem:
+
+Razvijaj složenije primere sa useContext, kao što su globalna podešavanja aplikacije, teme, i korisničke podatke.
+React Router:
+
+Postavljanje rute u SPA (Single Page Applications)
+Dinamičke rute i useParams za pristup parametrima u URL-u
+Navigacija i zaštita ruta za korisnike
+State Management biblioteke:
+
+Uvod u Redux i useReducer kao osnovu za rad sa njim
+Rad sa Redux Toolkit ako budeš želeo dublje upravljanje stanjem
+React i APIs:
+
+Rad sa RESTful API-jem pomoću fetch ili axios biblioteke
+Rad sa GraphQL-om (ako te zanima)
+Testiranje u React-u:
+
+Jedinično testiranje komponenti pomoću Jest i React Testing Library
+Integraciono testiranje, simulacija događaja
+Server-Side Rendering (SSR) i Next.js:
+
+Uvod u SSR sa Next.js
+Staticko generisanje stranica (SSG) i dinamičko generisanje
+Performance i optimizacija:
+
+Lazy loading, React Suspense
+Paginacija, virtualizacija liste
