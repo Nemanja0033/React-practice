@@ -44,7 +44,7 @@ const TaskList = () => {
                 type: 'CLEAR_TASKS',
                 payload: undefined,
                 index: undefined
-            })}>Obriši Sve</button>
+            })}>Delete all</button>
             <ul>
                 {tasks.map((task, index) => (
                     <li key={index}>
